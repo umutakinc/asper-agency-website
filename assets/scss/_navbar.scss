@@ -36,4 +36,17 @@
             }
         }
     }
+
+    &-toggler {
+        border-color: $white;
+        
+        &:focus {
+            box-shadow: none;
+        }
+
+        &-icon {
+            background-image: url($navbarTogglerIcon);
+        }
+    }
+
 }
