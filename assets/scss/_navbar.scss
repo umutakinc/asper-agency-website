@@ -1,0 +1,52 @@
+// Navbar
+@import 'variables';
+
+.navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 1.5rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    .hidden {
+        background-color: $black;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        transition: all .5s;
+    }
+
+    .nav {
+        &-item {
+            margin-right: 1rem;
+        }
+        
+        &-link {
+            color: $white;
+            text-transform: uppercase;
+            transition: color .4s;
+            letter-spacing: .1rem;
+
+            &:hover {
+                color: $mustard;
+            }
+        }
+    }
+
+    &-toggler {
+        border-color: $white;
+        
+        &:focus {
+            box-shadow: none;
+        }
+
+        &-icon {
+            background-image: url($navbarTogglerIcon);
+        }
+    }
+
+}

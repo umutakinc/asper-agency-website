@@ -1,0 +1,28 @@
+// Root
+@import 'variables';
+
+body {
+    font-family: "Playfair Display";
+    background-color: $mustard;
+}
+
+.btn {
+    border: 0;
+    border-radius: 1.5rem;
+    box-shadow: none !important;
+    font-size: 1.15rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    transition: all .4s;
+    padding: .5rem 2rem;
+    
+    &-light {
+        background-color: $white;
+        color: $black;
+
+        &:hover {
+            background-color: $mustard;
+            color: $white;
+        }
+    }
+}
